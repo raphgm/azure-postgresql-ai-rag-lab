@@ -66,6 +66,8 @@ for f in src/sql/0*.sql; do
 done
 ```
 
+**Why HNSW instead of IVFFlat in `03-indexing.sql`:** HNSW gives better recall out of the box and needs no tuning to table size, which is why it's the default here. IVFFlat builds faster and uses less memory, but its `lists` parameter has to be tuned to roughly `rows / 1000` for reasonable recall — worth the trade if you're bulk-loading a very large table and build time matters more than query recall on day one. For most RAG workloads under a few million rows, HNSW's simplicity wins.
+
 ### 4. Ask it something
 
 ```sql
