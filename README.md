@@ -6,7 +6,7 @@ Companion lab for the article [Building AI-Powered Applications with Azure Datab
 
 ---
 
-## 🎯 Architecture
+## Architecture
 
 ```mermaid
 flowchart TD
@@ -20,7 +20,7 @@ flowchart TD
 
 ---
 
-## 📚 Repository Structure
+## Repository Structure
 
 ```text
 .
@@ -41,7 +41,7 @@ flowchart TD
 
 ---
 
-## 🛠️ Quick Start
+## Quick Start
 
 ### 1. Enable the extensions
 
